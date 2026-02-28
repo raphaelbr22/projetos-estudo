@@ -1,0 +1,12 @@
+# Compilados e saídas
+/out/
+/target/
+*.class
+
+# Configurações do IntelliJ IDEA
+.idea/
+*.iml
+
+# Arquivos de sistema e logs
+.DS_Store
+*.log
