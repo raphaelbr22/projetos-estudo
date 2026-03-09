@@ -32,7 +32,6 @@ public class Autor {
         this.anoFalecimento = dadosAutor.anoFalecimento();
     }
 
-    // Getters e Setters (pode gerá-los automaticamente na sua IDE)
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getNome() { return nome; }
@@ -42,5 +41,14 @@ public class Autor {
     public Integer getAnoFalecimento() { return anoFalecimento; }
     public void setAnoFalecimento(Integer anoFalecimento) { this.anoFalecimento = anoFalecimento; }
     public List<Livro> getLivros() { return livros; }
-    public void setLivros(List<Livro> livros) { this.livros = livros; }
+    public void setLivros(List<Livro> livros) { this.livros = livros;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Autor: %s | Nascimento: %d | Falecimento: %s",
+                nome,
+                anoNascimento,
+                (anoFalecimento != null ? anoFalecimento : "N/A"));
+    }
 }
