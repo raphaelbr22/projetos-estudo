@@ -1,26 +1,28 @@
-# Compilação e Build (Maven)
+# Compilação e binários
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
 
-# IDE - IntelliJ IDEA
+# Configurações do IntelliJ IDEA
 .idea/
-*.iws
 *.iml
-*.ipr
 out/
 gen/
 
-# Sistema Operacional e Logs
-.DS_Store
-thumbs.db
-*.log
+# Configurações do Eclipse
+.settings/
+.project
+.classpath
 
-# help.md
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de sistema e logs
+.DS_Store
+*.log
+logs/
+
+# Arquivos de configuração local (onde ficam suas senhas)
+/src/main/resources/application-local.properties

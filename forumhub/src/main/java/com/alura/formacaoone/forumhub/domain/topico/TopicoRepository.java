@@ -9,6 +9,6 @@ public interface TopicoRepository extends JpaRepository<Topico, Long> {
     // Para a regra de negócio do Cadastro (Não permitir duplicados)
     boolean existsByTituloAndMensagem(String titulo, String mensagem);
 
-    // Para a Listagem (Já herdado do JpaRepository, mas você pode customizar se precisar)
+    // Para a Listagem (Já herdado do JpaRepository)
     Page<Topico> findAll(Pageable paginacao);
 }
