@@ -71,7 +71,7 @@ PUT /topicos/{id} -> Atualiza título ou mensagem de um tópico existente.
 DELETE /topicos/{id} -> Remove um tópico permanentemente.
 ```
 
-Documentação completa disponível em: http://localhost:8080/swagger-ui.html
+Documentação completa disponível após a execução do código em: http://localhost:8080/swagger-ui.html
 
 ## Autor
 
